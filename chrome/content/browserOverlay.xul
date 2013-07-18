@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://shit/skin/browserOverlay.css" type="text/css"?>
+<!DOCTYPE linktargetfinder SYSTEM "chrome://shit/locale/translations.dtd">
+<overlay id="shit-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="shit.js" />
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="shit-string-bundle"
+        src="chrome://shit/locale/browserOverlay.properties" />
+    </stringbundleset>
+
+
+    <menupopup id="menu_ToolsPopup">
+        <menu id="shit-hello-menu" label="&shit.hello.label;"
+        accesskey="&shit.helloMenu.accesskey;"
+        insertbefore="devToolsEndSeparator">
+            <menupopup>
+                <menuitem id="shit-hello-menu-item"
+                    label="&shit.hello.label;"
+                    accesskey="&shit.helloItem.accesskey;"
+                    oncommand="shit.BrowserOverlay.sayHello(event);" />
+            </menupopup>
+        </menu>
+    </menupopup>
+
+    <vbox id="appmenuSecondaryPane">
+        <menu id="shit-hello-menu-2" label="&shit.hello.label;"
+        accesskey="&shit.helloMenu.accesskey;"
+        insertafter="appmenu_addons">
+        <menupopup>
+            <menuitem id="shit-hello-menu-item-2"
+            label="&shit.hello.label;"
+            accesskey="&shit.helloItem.accesskey;"
+            oncommand="shit.BrowserOverlay.sayHello(event);" />
+        </menupopup>
+        </menu>
+    </vbox>
+</overlay>
+                                                                                                                                                45,10         Bot
+ 
